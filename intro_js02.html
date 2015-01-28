@@ -7,7 +7,7 @@
   <h1>Javascript Learning</h1>
   <script>
 
-  //Return list of fibonacci numbers going up to but not beyond max
+  // Return a list of fibonacci numbers going up to but not beyond max.
   function fibonacciSet(max) {
     if (max > 1) {
       var fibList = [1];
@@ -22,7 +22,7 @@
       }
   }
 
-  //Return a new list of all the even numbers from fibList
+  // Return a list containing all the even numbers from fibList.
   function filter(fibList) {
     isEven = [];
     for (var i = 0; i < fibList.length; i++) {
@@ -33,7 +33,7 @@
     return isEven;
   }
 
-  //Return the sum of the numbers in
+  // Return the sum of the numbers in anArray.
   function sum(anArray) {
     sum = 0
     for(var i = 0; i < anArray.length; i++) {
@@ -42,7 +42,7 @@
     return sum;
   }
 
-  //Call functions and print the sum of all even numbers in fibbonacci sequence
+  // Print the sum of all even numbers in a fibbonacci sequence up to max.
   console.log(sum(filter(fibonacciSet(4000000))));  
 
   </script>
@@ -50,12 +50,3 @@
 </html>
 
 
-
-<!--  
-var sum = 0;
-  for (var i = 0; i < 1000; i++) {
-    if (i % 3 === 0 || i % 5 === 0) {
-        sum = sum + i;
-    }
-  } 
- -->
