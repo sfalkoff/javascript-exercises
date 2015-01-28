@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Learning</title>
+</head>
+<body>
+  <h1>Javascript Learning</h1>
+  <script>
+  
+  function findDuplicates(yourArray) {
+    duplArray = [];
+    for (var i = 0; i < yourArray.length; i++) {
+        if (yourArray.indexOf(yourArray[i], i+1) !== -1) {
+            if (duplArray.indexOf(yourArray[i]) === -1) {
+                duplArray.push(yourArray[i]);
+            } 
+        }
+    } if (duplArray.length === 0) {
+        return "No duplicates.";
+    } else {
+        return duplArray;
+    }
+
+  }
+
+var randomJunkIFound = [false, 1 , "Hello", 1];
+
+console.log(findDuplicates(randomJunkIFound));
+
+
+  </script>
+</body>
+</html>
+
+
+
