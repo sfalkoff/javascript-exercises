@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Learning</title>
+</head>
+<body>
+  <h1>Javascript Learning</h1>
+  <script>
+
+//Return list of fibonacci numbers going up to but not beyond max.
+  function fibonacciSet(max) {
+    if (max > 1) {
+      var fibList = [1];
+      var currentFib = 1;
+      while (currentFib < max) {
+        fibList.push(currentFib);
+        currentFib = fibList[fibList.length-1] + fibList[fibList.length-2];
+      } 
+      return fibList;
+     } else {
+          return [1, 1]
+      }
+  }
+
+console.log(fibonacciSet(400));
+  //define filter function
+
+  //define sum function
+   
+
+  </script>
+</body>
+</html>
+
+
+
+<!--  
+var sum = 0;
+  for (var i = 0; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        sum = sum + i;
+    }
+  } 
+ -->
