@@ -62,6 +62,21 @@
     Change the background color of the "text-box-color" div to red
     Change the content of the "text-box-color" div to "I am the color red!"
   -->
+  <script>
+  var colorLink = document.getElementById('get-color');
+
+  function clickMe2(evt) {
+    evt.preventDefault();
+    var oldColor = document.getElementById('text-box-color');
+    oldColor.style.backgroundColor = "red";
+    var txt = document.getElementById('text-box-color');
+    txt.textContent = 'I am the color red!';
+  }
+
+  colorLink.addEventListener('click', clickMe2)
+
+  </script>
+
 </div>
 
 <div id="melon-box">
