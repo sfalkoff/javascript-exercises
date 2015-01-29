@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Learning</title>
+</head>
+<body>
+  <h1>Javascript Learning</h1>
+  <script>
+    var cat = {
+      tiredness: 20,
+      hunger: 20,
+      loneliness: 20,
+      happiness: 20,
+      sleep: function() {
+        this.tiredness = this.tiredness - 5;
+      },
+      eat: function() {
+        this.hunger = this.hunger - 5;
+        this.happiness = this.happiness + 5;
+        this.tiredness = this.tiredness + 5;
+      },
+      socialize: function() {
+        this.loneliness = this.loneliness - 5;
+        this.happiness = this.happiness + 5;
+      },
+      play: function() {
+        this.happiness = this.happiness + 5;
+        this.tiredness = this.tiredness - 5;
+      },
+      status: function() {
+        console.log("The cat is " + this.tiredness +", " + this.hunger + ", " + this.loneliness + ", " + this.happiness + " units of tiredness, hunger, loneliness, and happiness respectively.");
+         }
+
+    }
+
+  </script>
+</body>
+</html>
+
+
